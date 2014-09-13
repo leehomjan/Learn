@@ -14,11 +14,7 @@ static int count(int orig)
     int rem = 0; // remainder
     // count 1s in bit ten hundred ...
     while (orig / div) {
-<<<<<<< HEAD
         rem = orig%div;
-=======
-        rem = orig％div;
->>>>>>> FETCH_HEAD
         quo = orig/(div*10);
         curr = (orig/div)%10;
 
