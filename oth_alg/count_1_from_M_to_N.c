@@ -14,7 +14,7 @@ static int count(int orig)
     int rem = 0; // remainder
     // count 1s in bit ten hundred ...
     while (orig / div) {
-        rem = orig - (orig/div)*div;
+        rem = orig%div;
         quo = orig/(div*10);
         curr = (orig/div)%10;
 
@@ -37,6 +37,7 @@ static int count(int orig)
                 // they are [00...20]1[00...99]
                 count += (quo+1)*div;
         }
+        printf("%d\n", count);
         div *= 10;
     }
     return count;
