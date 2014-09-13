@@ -14,7 +14,7 @@ static int count(int orig)
     int rem = 0; // remainder
     // count 1s in bit ten hundred ...
     while (orig / div) {
-        rem = orig - (orig/div)*div;
+        rem = orig％div;
         quo = orig/(div*10);
         curr = (orig/div)%10;
 
